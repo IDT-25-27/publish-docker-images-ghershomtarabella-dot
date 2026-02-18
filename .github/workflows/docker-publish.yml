@@ -46,6 +46,10 @@ jobs:
           context: .
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: ${{ steps.meta.outputs.tags }}
-            ghcr.io/idt-25-27/publish-docker-images-ghershomtarabella-dot/stackoverflown:main
-            ghcr.io/idt-25-27/publish-docker-images-ghershomtarabella-dot/stackoverflown:${{ github.sha }}
+  <<<<<<< feature/add-high-score
+            tags: ${{ steps.meta.outputs.tags }}
+  =======
+            tags: ${{ steps.meta.outputs.tags }}
+              ghcr.io/idt-25-27/publish-docker-images-ghershomtarabella-dot/stackoverflown:main
+              ghcr.io/idt-25-27/publish-docker-images-ghershomtarabella-dot/stackoverflown:${{ github.sha }}
+  >>>>>>> main
